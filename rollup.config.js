@@ -32,7 +32,9 @@ export default {
         sourcemap: true,
         banner,
         globals: {
-            cesium: 'Cesium'
+            cesium: 'Cesium',
+            'pako/lib/inflate.js': 'pako',
+            protobufjs: 'protobuf'
         }
     }, {
         file: 'dist/tdtplug.es.js',
@@ -43,7 +45,9 @@ export default {
     plugins: [
         resolve(),
         commonjs(),
-        babel(),
+        babel({
+            babelHelpers: 'bundled'
+        }),
         terser({
             format: {
                 comments: /^!/
