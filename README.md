@@ -58,3 +58,5 @@ git push origin main --follow-tags
 ```
 
 配置完成后，GitHub Actions 会通过 OIDC 直接执行 `npm publish`。如果仓库和包都是公开的，npm 会自动生成 provenance，不需要额外传 `--provenance`。
+
+当前工作流没有启用 npm 依赖缓存，因为仓库未提交 `package-lock.json`。如需在不发 tag 的情况下验证发布流程，可在 GitHub Actions 页面手动触发 `Publish to NPM`。
