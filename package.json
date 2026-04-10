@@ -1,6 +1,6 @@
 {
   "name": "@zacharyjia/tdt-cesium-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cesium 天地图地形和地名插件",
   "main": "dist/tdtplug.umd.js",
   "module": "dist/tdtplug.es.js",
