@@ -1,4 +1,5 @@
-import {parse} from "protobufjs"
+import protobuf from "protobufjs"
+
 export function loadProto(str) {
-    return parse(str)
+    return protobuf.parse(str)
 }
