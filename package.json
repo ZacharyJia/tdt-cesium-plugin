@@ -1,7 +1,7 @@
 {
   "name": "@zacharyjia/tdt-cesium-plugin",
-  "version": "1.0.5",
-  "description": "Cesium 天地图地形和地名插件",
+  "version": "2.0.0",
+  "description": "Cesium 天地图地形插件",
   "main": "dist/tdtplug.umd.js",
   "module": "dist/tdtplug.es.js",
   "type": "module",
@@ -40,9 +40,10 @@
   },
   "homepage": "https://github.com/ZacharyJia/tdt-cesium-plugin#readme",
   "peerDependencies": {
-    "cesium": "^1.123.1",
-    "pako": "^2.1.0",
-    "protobufjs": "^7.2.6"
+    "cesium": "^1.123.1"
+  },
+  "dependencies": {
+    "pako": "^2.1.0"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",

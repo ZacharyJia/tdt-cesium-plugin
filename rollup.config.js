@@ -21,7 +21,6 @@ export default {
     input: 'src/index.js',
     external: (id) => {
         return id === 'cesium' || 
-               id === 'protobufjs' || 
                id.startsWith('pako/') ||
                id === 'pako';
     },
@@ -33,8 +32,7 @@ export default {
         banner,
         globals: {
             cesium: 'Cesium',
-            'pako/lib/inflate.js': 'pako',
-            protobufjs: 'protobuf'
+            'pako/lib/inflate.js': 'pako'
         }
     }, {
         file: 'dist/tdtplug.es.js',
